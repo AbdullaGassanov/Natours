@@ -1,0 +1,125 @@
+.about {
+  overflow: hidden;
+  padding: 2rem 0.5rem;
+
+  width: 100%;
+  height: 55rem;
+
+  .about__title {
+    text-align: center;
+
+    transition: 0.2s;
+
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    color: rgba($color-primary, 1);
+
+    &:hover {
+      transform: scale(1.2) skewY(2deg) skewX(12deg);
+      text-shadow: 5px 10px 20px rgba($color-primary, 1);
+      cursor: pointer;
+    }
+  }
+
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 110rem;
+    margin: 0 auto;
+
+    padding: 6rem 0;
+
+    .about__col-left {
+      flex: 1;
+      padding: 1rem;
+
+      .about__col-left-content {
+        width: 100%;
+
+        .about__sub-title {
+          font-size: 1.9rem;
+
+          text-transform: uppercase;
+        }
+
+        .about__text {
+          font-size: 1.7rem;
+          padding: 1rem 0;
+        }
+
+        .about__link-box {
+          padding: 1rem 0;
+          .about__link {
+            color: $color-primary;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            font-size: 1.7rem;
+            font-weight: 700;
+            transition: 0.4s;
+            padding: 0 0.5rem;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -0.2rem;
+              left: 0;
+              height: 0.1rem;
+              width: 100%;
+              background-color: $color-primary;
+            }
+
+            &::after {
+              content: "→";
+              padding-left: 0.3rem;
+              display: inline-block;
+            }
+
+            &:hover {
+              color: $color-white;
+              background-color: $color-primary;
+              box-shadow: 0.5rem 1rem 2rem rgba(rgb(59, 46, 46), 0.6);
+              border-radius: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+
+    .about__col-right {
+      flex: 1;
+      position: relative;
+
+      .about-img-box {
+        width: 40rem;
+        height: 100%;
+      }
+
+      backface-visibility: hidden;
+
+      .about__img-box1 {
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        z-index: 3;
+        @include about-img;
+      }
+
+      .about__img-box2 {
+        position: absolute;
+        top: 2rem;
+        left: 20rem;
+        z-index: 5;
+        @include about-img;
+      }
+
+      .about__img-box3 {
+        position: absolute;
+        top: 13rem;
+        left: 9rem;
+        z-index: 7;
+        @include about-img;
+      }
+    }
+  }
+}

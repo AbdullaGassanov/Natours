@@ -5,3 +5,22 @@
     clear: both;
   }
 }
+
+@mixin about-img {
+  width: 30rem;
+  transition: 0.4s;
+  padding: 1em;
+  > img {
+    box-shadow: 0 2rem 2rem rgba(rgb(87, 78, 78), 0.6);
+    max-width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+    border: 1.1rem solid $color-primary;
+    border-radius: 2rem;
+    cursor: pointer;
+    z-index: 8;
+    box-shadow: 0.5rem 1rem 2rem rgba(rgb(87, 78, 78), 0.6);
+  }
+}
