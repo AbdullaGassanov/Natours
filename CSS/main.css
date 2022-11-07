@@ -266,6 +266,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -295,8 +299,14 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20vh;
+}
+
+.section-stories {
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  background-color: rgba(247, 247, 247, 0.8);
 }
 
 .btn--white {
@@ -683,6 +693,7 @@ body {
           background-size: cover;
   height: 23rem;
   background-blend-mode: screen;
+  border-radius: 5px 5px 0 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
@@ -776,6 +787,124 @@ body {
   padding-bottom: 6rem;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+  -webkit-transform: skewX(-12deg);
+       -o-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+  position: relative;
+  margin-bottom: 6rem;
+  /* &__name {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    transform: translateY(20rem);
+    background-color: rgba($color-black, 0.4);
+    background-blend-mode: color-dodge;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  } */
+}
+.story:hover .story__name {
+  cursor: pointer;
+  -webkit-transform: translateY(0);
+       -o-transform: translateY(0);
+          transform: translateY(0);
+}
+.story > * {
+  -webkit-transform: skewX(12deg);
+       -o-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+.story__shape {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  /* -webkit-shape-outside: circle(50% at 50% 50%); */
+  -webkit-shape-outside: circle(50% at 50% 50%);
+          shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  margin-right: 3rem;
+}
+.story__img {
+  height: 100%;
+  -webkit-transform: translateX(-4rem) scale(1.4);
+       -o-transform: translateX(-4rem) scale(1.4);
+          transform: translateX(-4rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+       -o-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.7rem;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.story:hover .story__img {
+  -webkit-transform: translateX(-4rem) scale(1);
+       -o-transform: translateX(-4rem) scale(1);
+          transform: translateX(-4rem) scale(1);
+  -webkit-filter: blur(3px) brightness(80%);
+          filter: blur(3px) brightness(80%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg-video__content {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   width: 100%;
   height: 95vh;
@@ -854,7 +983,11 @@ body {
     );
 }
 
-/* @import "layout/about"; */
+.stories__heading {
+  z-index: 4;
+  padding: 5rem 0 14rem 0;
+}
+
 .container {
   background-color: #f0f0f0;
 }/*# sourceMappingURL=main.css.map */
