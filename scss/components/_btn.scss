@@ -1,12 +1,23 @@
 .btn {
   &--white {
     background-color: $color-white;
-    color: #777;
+    color: $color-gray;
 
     &::after {
       background-color: $color-white;
     }
   }
+
+  &--green {
+    background-color: $color-primary-light;
+    color: $color-white;
+    font-weight: 400;
+
+    &::after {
+      background-color: $color-primary-light;
+    }
+  }
+
   &:link,
   &:visited {
     position: relative;
