@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Newgen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "compress": "^0.99.0"
+  }
 }
