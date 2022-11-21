@@ -5,15 +5,14 @@
 
   &__logo-box {
     text-align: center;
-    padding-bottom: 10rem;
   }
 
   &__logo {
-    padding-bottom: 8rem;
+    padding-bottom: 2rem;
   }
 
   &__navigation {
-    border-top: 1px solid $color-grey-light-1;
+    border-top: 1px solid rgba($color-grey-light-1, 0.1);
     padding-top: 2rem;
     display: inline-block;
     width: 85%;
@@ -39,6 +38,10 @@
       text-transform: uppercase;
       display: inline-block;
       transition: 0.2s;
+
+      @include respond(tab-port) {
+        font-size: 1.2rem;
+      }
     }
 
     &:hover,
@@ -51,46 +54,9 @@
 
   &__copyright {
     color: $color-grey-light-1;
-    border-top: 1px solid $color-grey-light-1;
+    border-top: 1px solid rgba($color-grey-light-1, 0.1);
     padding-top: 2rem;
-    width: 70%;
+    width: 85%;
     display: inline-block;
-    text-align: left;
   }
-
-  /*   &__box {
-    border-top: 1px solid $color-gray;
-    padding-top: 3rem;
-  }
-
-  &__boxes {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__box-left {
-    width: 40%;
-
-    ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        display: inline-block;
-        color: $color-white;
-        text-transform: uppercase;
-
-        font-size: 1.4rem;
-
-       
-      }
-    }
-  }
-
-  &__box-right {
-    width: 40%;
-    font-size: 1.4rem;
-    color: $color-white;
-  } */
 }

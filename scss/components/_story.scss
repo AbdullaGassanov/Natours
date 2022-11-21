@@ -11,6 +11,16 @@
 
   margin-bottom: 6rem;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
   &:hover &__name {
     cursor: pointer;
     transform: translateY(0);
@@ -29,6 +39,11 @@
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     margin-right: 3rem;
+    transform: translateX(-3rem) skewX(12deg);
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -36,6 +51,13 @@
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     transition: 0.4s;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {

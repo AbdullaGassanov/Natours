@@ -120,34 +120,13 @@
       </div>
     </nav>
 
-    <!--  <nav class="nav">
-      <a href="#nav" class="nav__logo">&#8801;</a>
-
-      <div class="nav__content" id="nav">
-        <ol class="nav__menu">
-          <li class="nav__item">
-            <a href="#" class="nav__link">About natours</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Your benfits</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Popular tours</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">stories</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">book now</a></li>
-        </ol>
-        <a href="#close" class="nav__close"> X </a>
-      </div>
-    </nav> -->
-
     <header class="header">
       <div class="header__logo-box">
         <img class="header__logo" src="img/logo-white.png" alt="logo" />
       </div>
 
       <div class="header__text-box">
-        <h1 class="heading-primary">
+        <h1 class="heading-primary u-center-text">
           <span class="heading-primary-main">OUTDОORS</span>
           <span class="heading-primary-sub">Is where life happens</span>
         </h1>
@@ -157,6 +136,8 @@
     </header>
 
     <main>
+      <!-- Section-About -->
+
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -188,20 +169,26 @@
             <div class="composition">
               <img
                 class="composition__photo composition__photo--p1"
-                src="Img/nat-1-large.jpg"
-                alt="nature pictur"
+                srcset="Img/nat-1.jpg 300w, Img/nat-1-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                alt="Photo-1"
+                src=" Img/nat-1-large.jpg"
               />
 
               <img
                 class="composition__photo composition__photo--p2"
-                src="Img/nat-2-large.jpg"
-                alt="nature pictur"
+                srcset="Img/nat-2.jpg 300w, Img/nat-2-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                alt="Photo-2"
+                src=" Img/nat-2-large.jpg"
               />
 
               <img
                 class="composition__photo composition__photo--p3"
-                src="Img/nat-3-large.jpg"
-                alt="nature pictur"
+                srcset="Img/nat-3.jpg 300w, Img/nat-3-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
+                alt="Photo-3"
+                src=" Img/nat-3-large.jpg"
               />
             </div>
           </div>
@@ -252,6 +239,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Section-Tours -->
 
       <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
@@ -361,99 +350,9 @@
         <div class="u-center-text u-margin-top-big">
           <a href="#" class="btn btn--green">Dicover all tours</a>
         </div>
-
-        <!--  <div class="heading-secondary">Most Popular Tours</div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="tour-box tour-box--item1">
-              <div class="tour-box__header">
-                <div
-                  class="tour-box__header-brand tour-box--item1__header-brand"
-                ></div>
-                <h3
-                  class="tour-box__header-title tour-box__header-title--orange"
-                >
-                  The sea
-                  <p
-                    class="tour-box__header-title-down tour-box__header-title-down--orange"
-                  >
-                    explorer
-                  </p>
-                </h3>
-              </div>
-
-              <div class="tour-box__body">
-                <ul class="tour-box__body-list">
-                  <li class="tour-box__body-item">3 day tours</li>
-                  <li class="tour-box__body-item">Up to 30 people</li>
-                  <li class="tour-box__body-item">2 tour guides</li>
-                  <li class="tour-box__body-item">Sleep in cozy hotels</li>
-                  <li class="tour-box__body-item">Difficult: easy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-1-of-3">
-            <div class="tour-box tour-box--item2 tour-box--item2">
-              <div class="tour-box__header">
-                <div
-                  class="tour-box__header-brand tour-box--item2__header-brand"
-                ></div>
-                <h3
-                  class="tour-box__header-title tour-box__header-title--green"
-                >
-                  The forest
-                  <p
-                    class="tour-box__header-title-down tour-box__header-title-down--green"
-                  >
-                    hiker
-                  </p>
-                </h3>
-              </div>
-
-              <div class="tour-box__body">
-                <ul class="tour-box__body-list">
-                  <li class="tour-box__body-item">3 day tours</li>
-                  <li class="tour-box__body-item">Up to 30 people</li>
-                  <li class="tour-box__body-item">2 tour guides</li>
-                  <li class="tour-box__body-item">Sleep in cozy hotels</li>
-                  <li class="tour-box__body-item">Difficult: easy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-1-of-3">
-            <div class="tour-box tour-box--item3 tour-box--item3">
-              <div class="tour-box__header">
-                <div
-                  class="tour-box__header-brand tour-box--item3__header-brand"
-                ></div>
-                <h3 class="tour-box__header-title tour-box__header-title--blue">
-                  The snow
-                  <p
-                    class="tour-box__header-title-down tour-box__header-title-down--blue"
-                  >
-                    adventure
-                  </p>
-                </h3>
-              </div>
-
-              <div class="tour-box__body">
-                <ul class="tour-box__body-list">
-                  <li class="tour-box__body-item">3 day tours</li>
-                  <li class="tour-box__body-item">Up to 30 people</li>
-                  <li class="tour-box__body-item">2 tour guides</li>
-                  <li class="tour-box__body-item">Sleep in cozy hotels</li>
-                  <li class="tour-box__body-item">Difficult: easy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn btn--green">discover all tours</a> -->
       </section>
+
+      <!-- Section-Stories -->
 
       <section class="section-stories">
         <div class="bg-video">
@@ -464,7 +363,7 @@
           </video>
         </div>
         <div class="u-margin-bottom-big u-center-text">
-          <h2 class="heading-secondary">we make people gennuinely happy</h2>
+          <h2 class="heading-secondary">we make people genuinely happy</h2>
         </div>
 
         <div class="row">
@@ -510,6 +409,8 @@
           <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
+
+      <!-- Section-Book -->
 
       <section class="section-book">
         <div class="row">
@@ -566,18 +467,6 @@
                       Large tour group</label
                     >
                   </div>
-                  <!--  <div class="form__radio-group">
-                    <input
-                      type="radio"
-                      class="form__radio-input"
-                      id="large"
-                      name="size"
-                    />
-                    <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Large tour group
-                    </label>
-                  </div> -->
                 </div>
 
                 <div class="form__group">
@@ -588,273 +477,54 @@
           </div>
         </div>
       </section>
-
-      <!--    <section class="section__booking u-center-text">
-        <div class="booking__box">
-          <div class="row">
-            <div class="col-1-of-2">
-              <div class="booking__form">
-                <div class="booking__content">
-                  <div class="heading-secondary">Start booking now!</div>
-                  <input
-                    class="booking__name"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Full name"
-                  />
-                  <input
-                    class="booking__name"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email address"
-                  />
-
-                  <div class="booking__radios">
-                    <input type="radio" name="tour " id="small_tour" />
-                    <label for="tour">Small tour group</label>
-                    <input type="radio" name="tour " id="large_tour" />
-                    <label for="tour">Large tour group</label>
-                  </div>
-
-                  <a href="#" class="btn btn--green">Next step &rarr;</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-1-of-2"></div>
-          </div>
-        </div>
-      </section> -->
-      <!--     <video
-          class="background-video"
-          src="Img/video.mp4"
-          id="storiesVideo"
-          autoplay
-          muted
-          loop
-        ></video>
-
-        <div class="stories__heading u-center-text">
-          <h2 class="heading-secondary">we make people gennuinely happy</h2>
-        </div>
-
-        <div class="row">
-          <div class="stories-box">
-            <img class="stories-box__img" src="img/nat-8.jpg" />
-
-            <div class="stories-box__text">
-              <h4 class="heading-tertiary">
-                I HAD THE BEST WEEK EVER WITH MY FAMILY
-              </h4>
-
-              <div class="stories-box__text-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur libero repellat quis
-                consequatur ducimus quam nisi exercitationem omnis earum qui.
-                Aperiam, ipsum sapiente aspernatur libero repellat quis
-                consequatur ducimus quam nisi exercitationem omnis earum qui.
-              </div>
-            </div>
-          </div>
-
-          <div class="stories-box">
-            <img class="stories-box__img" src="img/nat-9.jpg" />
-
-            <div class="stories-box__text">
-              <h4 class="heading-tertiary">
-                I HAD THE BEST WEEK EVER WITH MY FAMILY
-              </h4>
-
-              <div class="stories-box__text-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur libero repellat quis
-                consequatur ducimus quam nisi exercitationem omnis earum qui.
-                Aperiam, ipsum sapiente aspernatur libero repellat quis
-                consequatur ducimus quam nisi exercitationem omnis earum qui.
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      <!-- 
-      <section class="feature">
-        <div class="feature__item u-center-text">
-          <i class="icon-basic-world feature__item-icon"></i>
-          <h3 class="feature__item-title">Explore the world</h3>
-          <p class="feature__item-paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            facere sunt qui.
-          </p>
-        </div>
-        <div class="feature__item u-center-text">
-          <i class="icon-basic-compass feature__item-icon"></i>
-          <h3 class="feature__item-title">Meet nature</h3>
-          <p class="feature__item-paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            facere sunt qui.
-          </p>
-        </div>
-        <div class="feature__item u-center-text">
-          <i class="icon-basic-map feature__item-icon"></i>
-          <h3 class="feature__item-title">Find your way</h3>
-          <p class="feature__item-paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            facere sunt qui.
-          </p>
-        </div>
-        <div class="feature__item u-center-text">
-          <i class="icon-basic-heart feature__item-icon"></i>
-          <h3 class="feature__item-title">Live a healthier life</h3>
-          <p class="feature__item-paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            facere sunt qui.
-          </p>
-        </div>
-      </section> -->
-
-      <!--   <section class="about">
-          <h1 class="about__title">Exciting tours for adventurous people</h1>
-
-          <div class="about__content">
-         
-            <div class="about__col-left">
-              <div class="about__col-left-content">
-                <h3 class="about__sub-title">
-                  You're going to FALL IN LOVE WITH NATURE
-                </h3>
-                <p class="about__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Autem natus, Quam dolorum, molestiae cum blanditiis ipsam
-                  voluptatum quas soluta necessitatibus esse tempora? Pariatur
-                  eveniet facilis maxime.
-                </p>
-                <h3 class="about__sub-title">
-                  Like adventures like you never have before
-                </h3>
-                <p class="about__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Autem natus, Quam dolorum.
-                </p>
-
-                <div class="about__link-box">
-                  <a href="#" class="about__link">Learn more</a>
-                </div>
-              </div>
-            </div>
-          
-            <div class="about__col-right">
-              <div class="about-img-box">
-                <div class="about__img-box1">
-                  <img src="Img/nat-1.jpg" alt="nature pictur" />
-                </div>
-                <div class="about__img-box2">
-                  <img src="Img/nat-2.jpg" alt="nature pictur" />
-                </div>
-                <div class="about__img-box3">
-                  <img src="Img/nat-3.jpg" alt="nature pictur" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
     </main>
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img class="footer__logo" src="Img/logo-green-1x.png" alt="Full logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="Img/logo-green-small-1x.png"
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="Img/logo-green-1x.png 1x, Img/logo-green-2x.png 2x"
+            alt="Full logo"
+          />
+        </picture>
+      </div>
 
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Company</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Contacts us</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Carrers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Privacy policy</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Terms</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-1-of-2">
-            <p class="footer__copyright">
-              Built my <a href="#" class="footer__link">Abdulla Gasanov</a> by
-              the course Jonas Schmedtmann Advanced CSS and SCSS &copy; Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Quasi non
-              commodi quod nisi perspiciatis porro ex beatae, corporis quos
-              expedita?
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--   <div class="row u-center-text">
-        <img src="/Img/logo-green-1x.png" alt="Natours" />
-      </div>
-      <div class="row u-center-text">
-        <div class="footer__boxes">
-          <div class="footer__box footer__box-left">
-            <ul>
-              <li class="heading-tertiary">Company</li>
-              <li class="heading-tertiary">contat us</li>
-              <li class="heading-tertiary">Carrers</li>
-              <li class="heading-tertiary">Privacy Policy</li>
-              <li class="heading-tertiary">Terms</li>
+      <div class="row">
+        <div class="col-1-of-2 u-center-text">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contacts us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
             </ul>
           </div>
-
-          <div class="footer__box footer__box-right">
-            Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND
-            SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use
-            this webpage for both personal and commercial use, but NOT to claim
-            it as your own design. A credit to the original author, Jonas
-            Schmedtmann, is of course highly appreciated!
-          </div>
         </div>
-      </div> -->
+        <div class="col-1-of-2 u-center-text">
+          <p class="footer__copyright">
+            Built my <a href="#" class="footer__link">Abdulla Gasanov</a> by the
+            course Jonas Schmedtmann Advanced CSS and SCSS &copy; Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quasi non commodi quod
+            nisi perspiciatis porro ex beatae, corporis quos expedita?
+          </p>
+        </div>
+      </div>
     </footer>
-
-    <!--     <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">This is a column 1 of 2</div>
-        <div class="col-1-of-2">This is a column 1 of 2</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">This is a column 1 of 3</div>
-        <div class="col-1-of-3">This is a column 1 of 3</div>
-        <div class="col-1-of-3">This is a column 1 of 3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">This is a column 1 of 3</div>
-        <div class="col-2-of-3">This is a column 2 of 3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-2-of-4">This is a column 2 of 4</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">This is a column 1 of 4</div>
-        <div class="col-3-of-4">This is a column 3 of 4</div>
-      </div>
-    </section> -->
 
     <script src="scripts/js.js"></script>
   </body>
